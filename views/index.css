@@ -1,4 +1,4 @@
-.novidades {
+.cardapio {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -6,7 +6,7 @@
     padding: 20px;
 }
 
-.novidades .card {
+.cardapio .card {
     width: 18rem;
     background-color: #fff;
     border: 2px solid #d32f2f;
@@ -15,41 +15,41 @@
     transition: transform 0.3s;
 }
 
-.novidades .card:hover {
+.cardapio .card:hover {
     transform: translateY(-5px);
 }
 
-.novidades .card .card-img-top {
+.cardapio .card .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
-.novidades .card-body {
+.cardapio .card-body {
     padding: 15px;
 }
 
-.novidades .card .card-text {
+.cardapio .card .card-text {
     margin: 5px 0;
     font-family: 'Noto Serif JP', serif; 
 }
 
-.novidades .card .card-text.fs-6 {
+.cardapio .card .card-text.fs-6 {
     color: #d32f2f;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.novidades .card .card-text.fs-2 {
+.cardapio .card .card-text.fs-2 {
     color: #333;
     font-weight: 700;
 }
 
-.novidades .card .card-text.fs-5 {
+.cardapio .card .card-text.fs-5 {
     color: #666;
     font-style: italic;
 }
 
-.novidades .card .card-link {
+.cardapio .card .card-link {
     display: inline-block;
     background-color: #d32f2f;
     color: #fff;
@@ -61,7 +61,7 @@
     text-align: center;
 }
 
-.novidades .card .card-link:hover {
+.cardapio .card .card-link:hover {
     background-color: #b71c1c;
     color: #fff;
 }
