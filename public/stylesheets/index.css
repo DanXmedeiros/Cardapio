@@ -1,0 +1,147 @@
+@keyframes backgroundChange {
+    0% {
+        background-image: url('/public/images/japao1.jpg');
+    }
+    25% {
+        background-image: url('/public/images/japao2.jpg');
+    }
+    50% {
+        background-image: url('/public/images/por-do-sol.webp');
+    }
+    75% {
+        background-image: url('/public/images/santuario.webp');
+    }
+    100% {
+        background-image: url('/public/images/tokyo.webp');
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    animation: backgroundChange 20s infinite;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.cardapio {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #d32f2f;
+}
+
+.cardapio .card {
+    width: 10rem; 
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #d32f2f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 5px 0;
+    flex-shrink: 0;
+}
+
+.cardapio .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardapio .card .card-img-top {
+    height: 200px; /* Imagem menor */
+    object-fit: cover;
+    border-bottom: 2px solid #d32f2f;
+}
+
+.cardapio .card-body {
+    padding: 2px; 
+    text-align: center;
+}
+
+.cardapio .card .card-text {
+    margin: 4px 0;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.7rem; 
+}
+
+.cardapio .card .card-text.fs-6 {
+    color: #b71c1c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.6rem; 
+}
+
+.cardapio .card .card-text.fs-2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 0.8rem; 
+}
+
+.cardapio .card .card-text.fs-5 {
+    color: #555;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.cardapio .card .card-link {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 4px 8px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-size: 0.6rem; 
+    margin-top: 5px;
+}
+
+.cardapio .card .card-link:hover {
+    background-color: #b71c1c;
+}
+
+
+@media (max-width: 768px) {
+    .cardapio {
+        padding: 10px;
+        gap: 8px; 
+    }
+
+    .cardapio .card {
+        width: calc(33.33% - 8px); 
+    }
+
+    .cardapio .card .card-img-top {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardapio {
+        padding: 10px;
+    }
+
+    .cardapio .card {
+        width: calc(50% - 10px);
+    }
+
+    .cardapio .card .card-body {
+        padding: 6px;
+    }
+}

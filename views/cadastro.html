@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+  <title>Cadastro Japonês</title>
+  <link rel="stylesheet" href="/public/stylesheets/cadastro.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>登録</h1>
+    <h2>Cadastro</h2>
+    <form id="signup-form">
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="/views/login.html">Faça login</a></p>
+  </div>
+  <script type="module" src="/public/javascripts/cadastro.js"></script>
+</body>
+</html>

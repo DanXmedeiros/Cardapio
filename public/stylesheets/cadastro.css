@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('/public/images/japan-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #ddd;
+  }
+  
+  form input {
+    width: calc(100% - 20px);
+    padding: 0.8em;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    width: calc(100% - 20px);
+    padding: 0.8em;
+    margin: 10px auto;
+    background: #d72638;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #a31526;
+  }
+  
+  p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  a {
+    color: #d72638;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
