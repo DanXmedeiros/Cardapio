@@ -31,117 +31,151 @@ body {
     background-attachment: fixed;
     color: #333;
 }
+header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: top 0.3s ease-in-out;
+}
 
-.cardapio {
-    display: flex;
-    gap: 10px; 
-    justify-content: center;
-    flex-wrap: wrap; 
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffa500; 
+}
+
+#logoutBtn {
+    display: none;
+  }
+
+  .menu {
+    text-align: center;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
     max-width: 1200px;
-    border: 1px solid #d32f2f;
-}
-
-.cardapio .card {
-    width: 10rem; 
-    background-color: rgba(255, 255, 255, 0.95);
-    border: 2px solid #d32f2f;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 5px 0;
-    flex-shrink: 0;
-}
-
-.cardapio .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.cardapio .card .card-img-top {
-    height: 200px; /* Imagem menor */
-    object-fit: cover;
-    border-bottom: 2px solid #d32f2f;
-}
-
-.cardapio .card-body {
-    padding: 2px; 
-    text-align: center;
-}
-
-.cardapio .card .card-text {
-    margin: 4px 0;
+  }
+  
+  .menu-title {
     font-family: 'Noto Serif JP', serif;
-    font-size: 0.7rem; 
-}
-
-.cardapio .card .card-text.fs-6 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #b71c1c;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.6rem; 
-}
-
-.cardapio .card .card-text.fs-2 {
-    color: #333;
-    font-weight: 700;
-    font-size: 0.8rem; 
-}
-
-.cardapio .card .card-text.fs-5 {
-    color: #555;
-    font-style: italic;
-    font-size: 0.7rem;
-}
-
-.cardapio .card .card-link {
-    display: inline-block;
-    background-color: #d32f2f;
-    color: #fff;
-    padding: 4px 8px; 
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    width: 200px;
     text-align: center;
-    font-size: 0.6rem; 
-    margin-top: 5px;
-}
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .menu-item h3 {
+    font-family: 'Noto Serif JP', serif;
+    color: #d32f2f;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .menu-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 10px 15px;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
 
-.cardapio .card .card-link:hover {
+  #carouselSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+  }
+  
+  .carousel-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+    max-height: 300px;
+    display: block; 
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+  }
+  
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .floating-btn:hover {
     background-color: #b71c1c;
-}
-
-
-@media (max-width: 768px) {
-    .cardapio {
-        padding: 10px;
-        gap: 8px; 
-    }
-
-    .cardapio .card {
-        width: calc(33.33% - 8px); 
-    }
-
-    .cardapio .card .card-img-top {
-        height: 70px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cardapio {
-        padding: 10px;
-    }
-
-    .cardapio .card {
-        width: calc(50% - 10px);
-    }
-
-    .cardapio .card .card-body {
-        padding: 6px;
-    }
-}
+  }
+  

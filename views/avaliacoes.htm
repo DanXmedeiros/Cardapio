@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/stylesheets/avaliações.css">
+    <title>Avaliações - Restaurante Japonês</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Avaliações do Restaurante JapanHub</h1>
+    </header>
+
+    <main>
+        <div class="review">
+            <div class="review-header">
+                <h2>Ótima Experiência!</h2>
+                <div class="stars">★★★★★</div>
+            </div>
+            <p>O atendimento foi excepcional e a comida estava deliciosa. A atmosfera japonesa realmente nos fez sentir em outro lugar!</p>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <h2>Delicioso e aconchegante</h2>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <p>Os pratos são maravilhosos, mas poderia ter mais opções vegetarianas. De resto, tudo perfeito!</p>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <h2>Autêntico e incrível</h2>
+                <div class="stars">★★★★★</div>
+            </div>
+            <p>Recomendo para todos que procuram uma experiência gastronômica japonesa verdadeira. O sushi é fora de série!</p>
+        </div>
+
+        <div class="add-review">
+            <button onclick="toggleForm()">Adicionar Avaliação</button>
+        </div>
+
+        <div class="review-form" id="reviewForm">
+            <label for="reviewTitle">Título da Avaliação:</label>
+            <input type="text" id="reviewTitle" placeholder="Digite o título">
+
+            <label for="reviewStars">Classificação (1-5 estrelas):</label>
+            <input type="number" id="reviewStars" min="1" max="5">
+
+            <label for="reviewText">Texto da Avaliação:</label>
+            <textarea id="reviewText" rows="4" placeholder="Escreva sua avaliação"></textarea>
+
+            <button onclick="addReview()">Salvar Avaliação</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Japonês. Desenvolvido com ❤️. <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <script src="/public/javascripts/ava.js"></script>
+
+</body>
+</html>
