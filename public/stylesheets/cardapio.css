@@ -1,0 +1,76 @@
+@keyframes backgroundChange {
+    0% {
+      background-image: url('/public/images/japao1.jpg');
+    }
+    25% {
+      background-image: url('/public/images/japao2.jpg');
+    }
+    50% {
+      background-image: url('/public/images/por-do-sol.webp');
+    }
+    75% {
+      background-image: url('/public/images/santuario.webp');
+    }
+    100% {
+      background-image: url('/public/images/tokyo.webp');
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: backgroundChange 20s infinite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .menu-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-form h2 {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    color: #d32f2f;
+  }
+  
+  .menu-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .menu-form input, .menu-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .menu-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-form button:hover {
+    background-color: #b71c1c;
+  }
+  
