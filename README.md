@@ -8,7 +8,6 @@ Um projeto de site interativo para restaurantes Japones com menu, carrossel e ca
 - JavaScript
 - FireBase
 - Node
-- API de Localização
 - Responsividade
 
  ### Funcionalidades
